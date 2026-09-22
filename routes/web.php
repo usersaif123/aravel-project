@@ -14,3 +14,4 @@ Route::get('/acces-refuse', function () {
     echo 'Access Denied ' ;
 }) ;
 Route::get('/article', [\App\Http\Controllers\ArticleController::class, 'index']);
+Route::resource('products', \App\Http\Controllers\ProductController::class);
